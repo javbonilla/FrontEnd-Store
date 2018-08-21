@@ -1,0 +1,211 @@
+html
+{
+    box-sizing: border-box;
+    height: 100%;
+    background-image: url("../img/background.jpg");
+}
+
+*, *::before, *::after
+{
+    box-sizing: inherit;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+/* header --> */
+header
+{
+    width: 100%;
+    text-align: center; /* Para centrar el logo */
+    padding: 20px 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
+    background: #e570e7; /* Old browsers */
+    background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e570e7 0%,#c85ec7 47%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e570e7 0%,#c85ec7 47%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+    background-repeat: no-repeat; /* No repetir el degradado de fondo */
+    background-attachment: fixed; /* Ajustar degradado al viewport */
+}
+/* <-- header */
+
+/* contenedor --> */
+.contenedor 
+{
+    margin: 0 auto;  /* Centrar el componente horizontalmente */
+    width: 70%;
+}
+/* <-- contenedor */
+
+/* hero --> */
+div.hero img
+{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+h2
+{
+    text-align: center;
+    color: #da6fdb;
+    text-transform: uppercase;
+    margin: 30px 0;
+    border-bottom: 2px solid rgb(218, 111, 219);
+}
+/* <-- hero */
+
+ul.lista-productos
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.lista-productos li
+{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+ul.lista-productos li:nth-child(2n+1)
+{
+    clear: both;
+}
+
+ul.lista-productos li img 
+{
+    border: 10px solid rgba(218, 111, 219, 0.45);
+}
+
+ul.lista-productos li img:hover 
+{
+    border: 10px solid rgba(218, 111, 219, 1);
+}
+
+ul.lista-productos li p
+{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #da6fdb;
+}
+
+ul.lista-productos li p span
+{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffce00;
+    text-shadow: 3px 3px 6px rgb(52, 27, 53);
+}
+
+ul.lista-productos li .boton
+{
+    background-color: #ffce00;
+    padding: 10px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(84, 43, 85, 0.7);
+}
+
+ul.lista-productos li .boton:hover
+{
+    color: rgb(84, 43, 85, 1);
+}
+
+div.productos::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* footer --> */
+footer
+{
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 30px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
+    background: #e570e7; /* Old browsers */
+    background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e570e7 0%,#c85ec7 47%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e570e7 0%,#c85ec7 47%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+    background-repeat: no-repeat; /* No repetir el degradado de fondo */
+    background-attachment: fixed; /* Ajustar degradado al viewport */
+}
+
+footer div.contenido-pie
+{
+    margin: 0 auto;  /* Centrar el componente horizontalmente */
+    width: 70%;
+    text-align: center;
+}
+
+footer div.contenido-pie p
+{
+    color: #ffffff;
+}
+
+footer div.contenido-pie p a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+footer div.devoluciones
+{
+    margin-left: 40px;
+}
+
+footer div.devoluciones img
+{
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer div.devoluciones a
+{
+    color: #ffffff;
+    display: inline-block;
+}
+
+footer div.sistemas-pagos
+{
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer div.sistemas-pagos img
+{
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+footer div.sistemas-pagos img:nth-child(2),
+footer div.sistemas-pagos img:nth-child(3)
+{
+    margin-left: 40px;
+}
+/* <-- footer */
